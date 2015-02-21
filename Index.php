@@ -1,5 +1,7 @@
 <?php
-require './model.php';
-$artic = dbQuery('SELECT head,pass from News');
+require __DIR__ .'./model.php';
 
-require './view/index.php';
+$artic = DBQuery('SELECT * FROM News');
+
+include __DIR__ .'./view/view.php';
+?>
