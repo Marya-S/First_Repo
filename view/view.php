@@ -1,7 +1,3 @@
-<?php
-require '../model.php';
-?>
-
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -10,8 +6,13 @@ require '../model.php';
 </head>
 <body>
  <ul>
-    <?php foreach ($artic as $news){ ?>
-     <li><a href="<?php echo $news['pass'];} ?>">Новость экономики</a> </li>
+
+    <?php foreach ($artic as $news => $cont){
+        ?>
+     <li>
+        <a href="<?php echo ($cont['Pass']);?>"><?php echo ($cont['Head']);?></a>
+     </li><?php } ?>
+
  </ul>
 </body>
 </html>
